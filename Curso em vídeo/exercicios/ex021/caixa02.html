@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(120, 163, 163);
+            border: 5px solid rgb(112, 112, 112);
+            padding: 10px;
+            margin: auto;
+            width: 380px;
+            box-shadow: 2px 0px 4px 1px rgba(0, 0, 0, 0.466);
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        h1 {
+            text-align: center;
+            box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.466);
+        }
+
+        nav {
+            background-color: rgb(94, 109, 109);
+            text-align: center;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.466);
+        }
+
+        nav a {
+            display: inline-block;
+            background-color: rgb(133, 133, 133);
+            border: 1px dashed rgb(119, 119, 119);
+            padding: 1px;
+        }
+
+        main {
+            background-color: rgb(120, 163, 163);
+            border: 5px solid rgb(112, 112, 112);
+            box-shadow: 2px 0px 4px 1px rgba(0, 0, 0, 0.466);
+            padding: 10px;
+            margin: auto;
+            width: 380px;
+        }
+
+        section {
+            box-shadow: 2px 0px 4px 1px rgba(0, 0, 0, 0.466);
+            background-color: rgb(120, 163, 163);
+            border: 5px solid rgb(112, 112, 112);
+            border-radius: 10px;
+            padding: 10px;
+            margin: auto;
+            width: 380px;
+        }
+
+        article {
+            box-shadow: 2px 0px 4px 1px rgba(0, 0, 0, 0.466);
+            border-radius: 10px 10px 0px 0px;
+            background-color: rgb(120, 163, 163);
+            border: 5px solid rgb(112, 112, 112);
+            padding: 10px;
+            margin: auto;
+            width: 380px;
+        }
+
+        div {
+            box-shadow: 2px 0px 4px 1px rgba(0, 0, 0, 0.466);
+            background-color: rgb(120, 163, 163);
+            border: 5px solid rgb(112, 112, 112);
+            padding: 10px;
+            margin: auto;
+            width: 380px;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        span {
+            box-shadow: 2px 0px 4px 1px rgba(0, 0, 0, 0.466);
+            background-color: rgb(120, 163, 163);
+            border: 5px solid rgb(112, 112, 112);
+            padding: 10px;
+            margin: auto;
+            width: 380px;
+        }
+
+        footer {
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.466);
+            background-color: rgb(120, 163, 163);
+            border: 5px solid rgb(112, 112, 112);
+            padding: 10px;
+            margin: auto;
+            width: 380px;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        p {
+            background-color: rgb(120, 163, 163);
+            border: 5px solid rgb(112, 112, 112);
+            padding: 10px;
+            margin: auto;
+            width: 380px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tags de Agrupamento</h1>
+        <nav>
+            <a href="caixa01.html">Caixa 01</a>
+            <a href="caixa02.html">Caixa 02</a>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <article id="intro-text">
+                <p>Tags de agrupamento são usadas para agrupar conteúdo em um documento. Elas não afetam o conteúdo ou o layout da
+                    página, mas podem ser úteis ao estilizar a página com CSS.</p>
+            </article>
+            <div id="tags">
+                <p>Tags de agrupamento incluem:</p>
+                <ul id="tags-list">
+                    <li><code>&lt;div&gt;</code> - Define uma divisão ou uma seção em um documento HTML</li>
+                    <li><code>&lt;span&gt;</code> - Define uma seção em um documento</li>
+                    <li><code>&lt;header&gt;</code> - Define um cabeçalho para um documento ou uma seção</li>
+                    <li><code>&lt;main&gt;</code> - Define o conteúdo principal de um documento</li>
+                    <li><code>&lt;footer&gt;</code> - Define um rodapé para um documento ou uma seção</li>
+                    <li><code>&lt;nav&gt;</code> - Define um conjunto de links de navegação</li>
+                    <li><code>&lt;article&gt;</code> - Define um artigo independente e auto-contido</li>
+                    <li><code>&lt;section&gt;</code> - Define uma seção em um documento</li>
+                    <li><code>&lt;aside&gt;</code> - Define conteúdo ao lado do conteúdo da página</li>
+                    <li><code>&lt;details&gt;</code> - Define detalhes adicionais que o usuário pode visualizar ou ocultar</li>
+                    <li><code>&lt;summary&gt;</code> - Define um cabeçalho para o elemento <code>&lt;details&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Fonte: <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">W3Schools</a></p>
+    </footer>
+</body>
+
+</html>

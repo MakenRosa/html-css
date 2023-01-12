@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexível</title>
+</head>
+<body>
+    <h1>Imagem flexível</h1>
+    <p>Esta imagem se adapta ao tamanho da tela</p>
+    <picture>
+        <source media="(max-width: 710px)" srcset="imagens/paisagem-p.jpg">
+        <source media="(max-width: 1010px)" srcset="imagens/paisagem-m.jpg">
+        <img src="imagens/paisagem-g.jpg" alt="Imagem flexível">
+    </picture>
+</body>
+</html>
