@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            border: 3px solid #000;
+        }
+        th{
+            border: 1px solid #000;
+            padding: 8px;
+        }
+        td{
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .numero{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aplicação prática de expansão</h1>
+    <Table>
+        <thead>
+            <tr>
+                <th scope="col" style="font-weight: bold;">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Matrix</td>
+                <td>Star Wars</td>
+            </tr>
+            <tr>
+                <td>Carla Silva</td>
+                <td>Hulk</td>
+                <td>Rambo</td>
+                <td>Star Trek</td>
+            </tr>
+            <tr>
+                <td>Juliana Souza</td>
+                <td>Homem de Ferro</td>
+                <td>Big Hero</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>João Silva</td>
+                <td>Oldboy</td>
+                <td>Oblivion</td>
+                <td>Intocáveis</td>
+            </tr>
+            <tr>
+                <td>Carlos Souza</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+                <td>Wall-e</td>
+            </tr>
+            <tr>
+                <td>Paulo Santos</td>
+                <td>Avatar</td>
+                <td>Interestelar</td>
+                <td>Vingadores</td>
+        </tbody>
+
+    </Table>
+</body>
+</html>

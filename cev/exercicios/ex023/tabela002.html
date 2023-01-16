@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ot-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            background-color: rgb(112, 112, 112);
+            padding: 8px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 8px;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .numero{
+            text-align: right;
+        }
+
+        thead, tfoot{
+            color: rgb(255, 255, 255);
+            background-color: rgb(54, 54, 54);
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: rgb(219, 219, 219);
+        }
+        
+        thead{
+            position: sticky;
+            top: -1px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Tabelas grandes</h1>
+    <!--
+        Anatomia de tabelas grandes
+        Table
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População dos estados brasileiros</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">20.000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20.000.000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11.000.000</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">8.000.000</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">4.000.000</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="numero">1.000.000</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="numero">800.000</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="numero">1.200.000</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="numero">800.000</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="numero">1.600.000</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">7.000.000</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="numero">3.200.000</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">9.600.000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">3.200.000</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="numero">4.000.000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9.600.000</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="numero">3.200.000</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="numero">2.400.000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.400.000</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="numero">3.000.000</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">7.000.000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">3.600.000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="numero">2.800.000</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="numero">4.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11.200.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7.000.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="numero">108.000.000</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, deleniti accusamus accusantium nihil ducimus deserunt nam odit. Aut ex, ut cum sequi aperiam, eaque vel suscipit error iure expedita veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rem nam eveniet sit. Exercitationem maiores nulla explicabo, cumque omnis sit odio at! Aspernatur voluptatem possimus eveniet architecto magnam maiores sequi!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quisquam nobis rerum commodi voluptate officia id accusamus iure quod fugit! Officiis dicta iure aliquam amet dolorem libero perspiciatis cum odio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officiis quam ducimus hic quasi. Obcaecati sunt minima asperiores voluptatum, ullam tenetur quo, perspiciatis provident sed eaque, dolores doloribus? Minus, non.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima architecto a, quia fugiat, harum dolore nemo accusantium sit numquam ullam, doloremque necessitatibus dolorum mollitia ea tenetur quas laboriosam! Optio, est?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis beatae dolorem voluptatem consequatur commodi veniam labore, quidem ab voluptatibus hic debitis nesciunt molestiae cupiditate. Excepturi neque non amet totam soluta.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, deleniti accusamus accusantium nihil ducimus deserunt nam odit. Aut ex, ut cum sequi aperiam, eaque vel suscipit error iure expedita veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rem nam eveniet sit. Exercitationem maiores nulla explicabo, cumque omnis sit odio at! Aspernatur voluptatem possimus eveniet architecto magnam maiores sequi!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quisquam nobis rerum commodi voluptate officia id accusamus iure quod fugit! Officiis dicta iure aliquam amet dolorem libero perspiciatis cum odio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officiis quam ducimus hic quasi. Obcaecati sunt minima asperiores voluptatum, ullam tenetur quo, perspiciatis provident sed eaque, dolores doloribus? Minus, non.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima architecto a, quia fugiat, harum dolore nemo accusantium sit numquam ullam, doloremque necessitatibus dolorum mollitia ea tenetur quas laboriosam! Optio, est?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis beatae dolorem voluptatem consequatur commodi veniam labore, quidem ab voluptatibus hic debitis nesciunt molestiae cupiditate. Excepturi neque non amet totam soluta.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, deleniti accusamus accusantium nihil ducimus deserunt nam odit. Aut ex, ut cum sequi aperiam, eaque vel suscipit error iure expedita veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rem nam eveniet sit. Exercitationem maiores nulla explicabo, cumque omnis sit odio at! Aspernatur voluptatem possimus eveniet architecto magnam maiores sequi!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quisquam nobis rerum commodi voluptate officia id accusamus iure quod fugit! Officiis dicta iure aliquam amet dolorem libero perspiciatis cum odio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officiis quam ducimus hic quasi. Obcaecati sunt minima asperiores voluptatum, ullam tenetur quo, perspiciatis provident sed eaque, dolores doloribus? Minus, non.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima architecto a, quia fugiat, harum dolore nemo accusantium sit numquam ullam, doloremque necessitatibus dolorum mollitia ea tenetur quas laboriosam! Optio, est?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis beatae dolorem voluptatem consequatur commodi veniam labore, quidem ab voluptatibus hic debitis nesciunt molestiae cupiditate. Excepturi neque non amet totam soluta.</p>
+</body>
+</html>

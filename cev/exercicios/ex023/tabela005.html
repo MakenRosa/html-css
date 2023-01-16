@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+            border: 3px solid #000;
+        }
+        td, th{
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .numero{
+            text-align: right;
+        }
+        caption{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .cnome{
+            background-color: #ccc;
+        }
+
+        .cidade{
+            background-color: #ddd;
+        }
+
+        .csexo{
+            background-color: #eee;
+        }
+
+        .cprofissao{
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exerício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cidade">
+            <col class="csexo">
+            <col class="cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>20</td>
+            <td>Masculino</td>
+            <td>Programador</td>
+    </table>
+</body>
+</html>
