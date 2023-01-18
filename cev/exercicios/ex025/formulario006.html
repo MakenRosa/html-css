@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+        label {
+            display: block;
+            margin-top: 1em;
+        }
+        input {
+            margin-top: 0.5em;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Color, range e file</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="cor">Cor: </label>
+            <input type="color" name="cor" id="cor" value="#BB00BB">
+        </p>
+        <p>
+            <label for="nivel">Nível de satisfação: </label>
+            <input type="range" name="nivel" id="nivel" min="0" max="10" step="1" value="3">
+        </p>
+        <p>
+            <label for="arquivo">Arquivo: </label>
+            <input type="file" name="arquivo" id="arquivo">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
