@@ -10,7 +10,7 @@
     <title>Media Queries</title>
 </head>
 
-<body>
+<body onresize="resize()">
     <header>
         <h1>Meu Site</h1>
         <input type="checkbox" name="burguer" id="burguer" onclick="mostrarMenu()">
@@ -47,6 +47,14 @@
         </article>
     </main>
     <script>
+        function resize() {
+            let menu = document.querySelector('menu');
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
         function mostrarMenu() {
             let menu = document.querySelector('menu');
             if (menu.style.display == 'block') {
