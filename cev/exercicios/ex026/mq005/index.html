@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Media Queries</title>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <input type="checkbox" name="burguer" id="burguer" onclick="mostrarMenu()">
+        <label for="burguer" id="burguer-label">
+            <div class="burguer"><p>☰</p></div>
+            <menu>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Portfólio</a></li>
+                </ul>
+            </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando media queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, magnam. Commodi saepe ipsa provident,
+                ducimus impedit libero qui dignissimos ullam aliquam animi esse deserunt hic perferendis, nesciunt
+                corrupti ratione. Quisquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque odit ea
+                reprehenderit, alias modi provident necessitatibus veritatis unde odio nulla esse fuga beatae, in,
+                adipisci deserunt inventore nihil assumenda enim?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quisquam amet dolore reprehenderit, aliquid
+                animi vitae quam hic minus doloribus earum, veniam delectus itaque corporis velit, placeat quia at id?
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati earum, quidem autem quasi cupiditate
+                laudantium distinctio voluptas repellat id. Ex necessitatibus minima aperiam delectus culpa consequuntur
+                nobis iusto deserunt enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id delectus pariatur explicabo temporibus
+                asperiores ullam ipsam culpa accusamus ducimus quas, optio repellendus dolorem rerum quos! Numquam,
+                impedit soluta. Cum, assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, id
+                dolore atque, amet, voluptatibus dolorum fugiat sapiente laboriosam laborum eius saepe praesentium error
+                fuga? Temporibus impedit voluptatem quae? Libero, ea.</p>
+        </article>
+    </main>
+    <script>
+        function mostrarMenu() {
+            let menu = document.querySelector('menu');
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
